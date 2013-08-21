@@ -1680,15 +1680,15 @@ section.intro {
 section.intro h1 {
   font-family: "roboto-condensed";
   color: #ff7b7a;
-  font-size: 10em;
+  font-size: 8em;
   background: white;
   display: inline-block;
   border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
   text-align: center;
-  letter-spacing: -8px;
+  letter-spacing: -5px;
 }
 h1,
 h2,

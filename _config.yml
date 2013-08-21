@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 css: /css
 title: Pedro Correias' Webstuffs
+exclude: ['less']
