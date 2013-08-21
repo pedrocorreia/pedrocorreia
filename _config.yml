@@ -1,3 +1,5 @@
-name: Your New Jekyll Site
+name: pedrocorreia.github.io
 markdown: redcarpet
 pygments: true
+css: /css
+title: Pedro Correias' Webstuffs

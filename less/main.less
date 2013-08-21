@@ -1,0 +1,51 @@
+@import "ink.less";
+@import "syntax.less";
+@import "font.less";
+
+@pale-red: #ff7b7a;
+
+body {
+  font-family: roboto;
+  font-size: 18px;
+}
+
+.condensed () {
+  font-family: "roboto-condensed";
+}
+
+section {
+
+  &.intro {
+    padding: 4em;
+    background: @pale-red;
+
+    h1 {
+      .condensed;
+      color: @pale-red;
+      font-size: 10em;
+      background: white;
+      display: inline-block;
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      letter-spacing: -8px;
+    }
+
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+}
