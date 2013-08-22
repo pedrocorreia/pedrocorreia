@@ -49,24 +49,24 @@
   background: linear-gradient(to bottom, #1b75ce 0%, #155ba1 150%);
 }
 #ink #navigation #gradients .green {
-  background: #4c9220;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c9220', endColorstr='#366817');
-  background: -moz-linear-gradient(top, #4c9220 0%, #366817 150%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c9220), color-stop(150%, #366817));
-  background: -webkit-linear-gradient(top, #4c9220 0%, #366817 150%);
-  background: -o-linear-gradient(top, #4c9220 0%, #366817 150%);
-  background: -ms-linear-gradient(top, #4c9220 0%, #366817 150%);
-  background: linear-gradient(to bottom, #4c9220 0%, #366817 150%);
+  background: #94f9ae;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#94f9ae', endColorstr='#63f789');
+  background: -moz-linear-gradient(top, #94f9ae 0%, #63f789 150%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #94f9ae), color-stop(150%, #63f789));
+  background: -webkit-linear-gradient(top, #94f9ae 0%, #63f789 150%);
+  background: -o-linear-gradient(top, #94f9ae 0%, #63f789 150%);
+  background: -ms-linear-gradient(top, #94f9ae 0%, #63f789 150%);
+  background: linear-gradient(to bottom, #94f9ae 0%, #63f789 150%);
 }
 #ink #navigation #gradients .red {
-  background: #be1c1c;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#be1c1c', endColorstr='#921515');
-  background: -moz-linear-gradient(top, #be1c1c 0%, #921515 150%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #be1c1c), color-stop(150%, #921515));
-  background: -webkit-linear-gradient(top, #be1c1c 0%, #921515 150%);
-  background: -o-linear-gradient(top, #be1c1c 0%, #921515 150%);
-  background: -ms-linear-gradient(top, #be1c1c 0%, #921515 150%);
-  background: linear-gradient(to bottom, #be1c1c 0%, #921515 150%);
+  background: #f88281;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88281', endColorstr='#f65150');
+  background: -moz-linear-gradient(top, #f88281 0%, #f65150 150%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f88281), color-stop(150%, #f65150));
+  background: -webkit-linear-gradient(top, #f88281 0%, #f65150 150%);
+  background: -o-linear-gradient(top, #f88281 0%, #f65150 150%);
+  background: -ms-linear-gradient(top, #f88281 0%, #f65150 150%);
+  background: linear-gradient(to bottom, #f88281 0%, #f65150 150%);
 }
 /*****************************************************************************/
 /*
@@ -1233,13 +1233,13 @@ body.animated *[class*="large-"] {
   font-size: inherit !important;
 }
 .screen-size-helper ul li.small {
-  color: #4a9b17;
+  color: #8effab;
 }
 .screen-size-helper ul li.medium {
   color: #ff9c00;
 }
 .screen-size-helper ul li.large {
-  color: #c91111;
+  color: #ff7b7a;
 }
 .drag {
   -webkit-box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
@@ -1673,13 +1673,23 @@ body {
   font-family: roboto;
   font-size: 18px;
 }
-section.intro {
-  padding: 4em;
+section {
+  padding: 6em;
+}
+section._01 {
   background: #ff7b7a;
 }
-section.intro h1 {
-  font-family: "roboto-condensed";
+section._01 h1 {
   color: #ff7b7a;
+}
+section._02 {
+  background: #8effab;
+}
+section._02 h1 {
+  color: #8effab;
+}
+section h1 {
+  font-family: "roboto-condensed";
   font-size: 8em;
   background: white;
   display: inline-block;
@@ -1688,7 +1698,9 @@ section.intro h1 {
   height: 1.5em;
   line-height: 1.5em;
   text-align: center;
-  letter-spacing: -5px;
+}
+section p {
+  color: white;
 }
 h1,
 h2,
