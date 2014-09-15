@@ -37,6 +37,23 @@
             .ink-navigation ul.menu.horizontal li { display: inline-block; float: none; }
             .ink-navigation ul.menu.horizontal li a { border-right: rgba(10,10,10,0.3) 1px solid; font-size:
             initial; }
+            .ink-navigation ul.menu.horizontal li.fade-out {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 15%;
+                z-index: 100;
+            }
+
+            .ink-navigation ul.menu.black.horizontal.black li.fade-out {
+                background: -moz-linear-gradient(left, rgba(26,26,26,0) 0%, rgba(26,26,26,1) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(26,26,26,0)), color-stop(100%,rgba(26,26,26,1))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(left, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(left, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(left, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* IE10+ */
+                background: linear-gradient(to right, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* W3C */
+            }
             .ink-navigation ul.menu.horizontal li:last-child a {
                 border-right: none;
             }
@@ -45,6 +62,7 @@
 
     <body>
         <nav class="ink-navigation ">
+
             <ul class="menu horizontal red scrollable">
                 <li>
                     <a href="#">FUTEBOL</a>
@@ -171,6 +189,7 @@
                 <li>
                     <a href="#">link</a>
                 </li>
+                <li class="fade-out"></li>
             </ul>
         </nav>
         <nav class="ink-navigation ">
