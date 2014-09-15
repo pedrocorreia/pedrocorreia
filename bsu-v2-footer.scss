@@ -27,6 +27,7 @@ $light-color: #f4f5f4;
             }
         }
     }
+
     .bsu-v2-footer-text {
 
         padding-left: 1.5em;
@@ -57,7 +58,7 @@ $light-color: #f4f5f4;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) and (max-pixel-ratio: 1) {
     #bsu-v2-footer {
         .bsu-v2-footer-logo, .bsu-v2-footer-text {
             float: none;
