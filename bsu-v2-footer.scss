@@ -1,0 +1,71 @@
+$dark-color: #272928;
+$light-color: #f4f5f4;
+
+
+
+#bsu-v2-footer {
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+    font-family: sans-serif;
+    padding: 1.3em 1.5em;
+    overflow: hidden;
+    font-weight: 300;
+
+    .bsu-v2-footer-logo, .bsu-v2-footer-text {
+        float: left;
+        overflow: hidden;
+    }
+    .bsu-v2-footer-logo {
+        a {
+            display: block;
+            img {
+                max-height: 35px;
+            }
+        }
+    }
+    .bsu-v2-footer-text {
+
+        padding-left: 1.5em;
+        text-align: right;
+        float: right;
+
+        p {
+            margin: 0;
+            -webkit-margin-before: 0;
+            -webkit-margin-after: 0;
+            padding-top: 12px;
+        }
+    }
+
+    &.bsu-v2-footer-light {
+        background: $light-color;
+        color: $dark-color;
+        a {
+            color: $dark-color;
+        }
+    }
+    &.bsu-v2-footer-dark {
+        background: $dark-color;
+        color: $light-color;
+        a {
+            color: $light-color;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #bsu-v2-footer {
+        .bsu-v2-footer-logo, .bsu-v2-footer-text {
+            float: none;
+            text-align: center;
+        }
+        .bsu-v2-footer-text {
+            line-height: 1.2;
+            padding: 0;
+        }
+    }
+}
