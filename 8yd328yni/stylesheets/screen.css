@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+body {
+  margin: 0;
+  background-image: url("../rt-map.jpg");
+  background-size: 100% auto;
+}
+
+/* line 14, ../sass/screen.scss */
+div.controls {
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* line 19, ../sass/screen.scss */
+div.indicator {
+  position: absolute;
+  bottom: 0;
+  width: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+/* line 28, ../sass/screen.scss */
+div.indicator.anim-loading {
+  -moz-transition: width, 5s, ease-in-out 1s;
+  -o-transition: width, 5s, ease-in-out 1s;
+  -webkit-transition: width, 5s, ease-in-out 1s;
+  transition: width 5s ease-in-out 1s;
+}
+/* line 30, ../sass/screen.scss */
+div.indicator.anim-loading.is-loading {
+  width: 100%;
+}
+/* line 35, ../sass/screen.scss */
+div.indicator.anim-status {
+  -moz-transition: background, height, 0.5s, ease-in-out 1s;
+  -o-transition: background, height, 0.5s, ease-in-out 1s;
+  -webkit-transition: background, height, 0.5s, ease-in-out 1s;
+  transition: background height 0.5s ease-in-out 1s;
+}
+/* line 38, ../sass/screen.scss */
+div.indicator.anim-status.status-green {
+  background: rgba(32, 207, 0, 0.65);
+  height: 5px;
+}
+/* line 42, ../sass/screen.scss */
+div.indicator.anim-status.status-amber {
+  background: rgba(255, 194, 0, 0.65);
+  height: 10px;
+}
+/* line 46, ../sass/screen.scss */
+div.indicator.anim-status.status-red {
+  background: rgba(201, 0, 0, 0.65);
+  height: 20px;
+}
+/* line 49, ../sass/screen.scss */
+div.indicator.anim-status.status-red span.delay {
+  font-size: 14px;
+  opacity: 1;
+  line-height: 20px;
+}
+/* line 57, ../sass/screen.scss */
+div.indicator span.delay {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+  text-align: center;
+  -moz-transition: opacity, font-size, 0.5s, ease-in-out 1s;
+  -o-transition: opacity, font-size, 0.5s, ease-in-out 1s;
+  -webkit-transition: opacity, font-size, 0.5s, ease-in-out 1s;
+  transition: opacity font-size 0.5s ease-in-out 1s;
+}
+/* line 64, ../sass/screen.scss */
+div.indicator span.delay .light {
+  font-weight: 300;
+  font-style: none;
+}

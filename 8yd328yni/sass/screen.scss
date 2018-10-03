@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+body {
+	margin: 0;
+	background-image: url("../rt-map.jpg");
+	background-size: 100% auto;
+ }
+
+div.controls {
+	text-align: center;
+	margin-top: 2em;
+}
+
+div.indicator {
+
+		position: absolute;
+		bottom: 0;
+		width: 5px;
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #fff;
+
+
+		&.anim-loading {
+			@include single-transition(width 5s ease-in-out);
+			&.is-loading {
+				width: 100%;
+			}
+		}
+
+		&.anim-status {
+			@include single-transition(background height .5s ease-in-out);
+
+			&.status-green {
+				background: rgba(32,207,0,0.65);
+				height: 5px;
+			}
+			&.status-amber {
+				background: rgba(255,194,0,0.65);
+				height: 10px;
+			}
+			&.status-red {
+				background: rgba(201,0,0,0.65);
+				height: 20px;
+				span.delay {
+					font-size: 14px;
+					opacity: 1;
+					line-height: 20px;
+				}
+			}
+		}
+
+		span.delay {
+			display: block;
+			width: 100%;
+			font-size: 0;
+			opacity: 0;
+			text-align: center;
+			@include single-transition (opacity font-size .5s ease-in-out);
+			.light {
+				font-weight: 300;
+				font-style: none;
+			}
+		}
+
+
+}
