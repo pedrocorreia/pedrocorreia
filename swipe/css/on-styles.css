@@ -10,13 +10,13 @@
 }
 .ons-main .ons-map-container {
   height: calc(100vh - 60px);
-  transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+  transition: all 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
 }
 .ons-main .ons-right-panel-container {
   z-index: 1;
   min-height: calc(100vh - 60px);
   background: #d8d8d8;
-  transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+  transition: all 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
 }
 .ons-main .ons-top-bar {
   position: absolute;
@@ -64,9 +64,7 @@
 }
 
 .ons-show-panel .ons-right-panel-container {
-  position: absolute;
-  right: auto;
-  width: 100%;
+  background: blue;
 }
 .ons-show-panel .on-map-container {
   position: absolute;
@@ -75,14 +73,7 @@
 }
 
 .ons-show-map .ons-right-panel-container {
-  position: absolute;
-  right: 100%;
-  width: 100%;
-}
-.ons-show-map .on-map-container {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  background: red;
 }
 
 @media (max-width: 576px) {

@@ -18,5 +18,5 @@
 
 
 @mixin ons-panel-transition {
-    transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+    transition: all 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
 }

@@ -26,9 +26,7 @@
 
 .ons-show-panel {
     .ons-right-panel-container {
-        position: absolute;
-        right: auto;
-        width: 100%;
+        background: blue;
     }
 
     .on-map-container {
@@ -40,17 +38,6 @@
 
 .ons-show-map {
     .ons-right-panel-container {
-        position: absolute;
-        right: 100%;
-        width: 100%;
+        background: red;
     }
-
-    .on-map-container {
-        position: absolute;
-        left: 0;
-        width: 100%;
-    }
-}
-
-.ons-show-map {
 }
