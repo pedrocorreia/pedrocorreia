@@ -13,7 +13,9 @@
   transition: all 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
 }
 .ons-main .ons-right-panel-container {
+  position: absolute;
   z-index: 1;
+  width: 100%;
   min-height: calc(100vh - 60px);
   background: #d8d8d8;
   transition: all 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
@@ -64,11 +66,6 @@
 
 .ons-show-panel .ons-right-panel-container {
   background: blue;
-}
-.ons-show-panel .on-map-container {
-  position: absolute;
-  left: -100%;
-  width: 100%;
 }
 
 .ons-show-map .ons-right-panel-container {

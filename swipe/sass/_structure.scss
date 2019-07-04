@@ -20,7 +20,9 @@
     }
 
     .#{$ons-prefix}-right-panel-container {
+        position: absolute;
         z-index: 1;
+        width: 100%;
         min-height: calc(100vh - 60px);
         background: rgb(216, 216, 216);
 
