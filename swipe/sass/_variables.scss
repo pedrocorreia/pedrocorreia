@@ -1,0 +1,23 @@
+$ons-prefix: 'ons';
+$ons-border-radius: 2px;
+
+// Element class names
+
+$ons-top-bar: #{$ons-prefix}-top-bar;
+// right panel
+$ons-right-panel: #{$ons-prefix}-right-panel;
+$ons-panel-collapse-tab: #{$ons-prefix}-panel-collapse-tab;
+$ons-panel-body: #{$ons-prefix}-panel-body;
+
+// Fixed dimentions
+$ons-right-panel-width: 370px;
+$ons-top-bar-height: 60px;
+// Colors
+$on-primary-colors: (
+    'orange': #ff4d33,
+    'blue': #24bfc9,
+    'petroleum': #245769,
+    'black-blue': #002327
+);
+$text-color: #333;
+$disabled-text-color: transparentize($text-color, .4);

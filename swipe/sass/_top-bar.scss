@@ -1,0 +1,14 @@
+.#{$ons-top-bar} {
+    padding: 16px;
+
+    .ons-logo {
+        margin-right: 32px;
+    }
+
+    &.mobile {
+        .ons-logo {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.#{$ons-right-panel} {
+    position: relative;
+    width: $ons-right-panel-width;
+    transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+
+    .#{$ons-panel-collapse-tab} {
+        line-height: 0;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 0;
+        padding: 8px;
+        transform: translateX(-100%);
+        background: #fff;
+
+        @include ons-border-radius(50px, 0, 0, 50px);
+        @include ons-box-shadow;
+    }
+
+    .#{$ons-panel-body} {
+        height: calc(100vh - 60px);
+        background: #fff;
+        box-shadow: -2px 2px 3px 0 rgba(0,0,0,.2);
+    }
+}
+
+.ons-show-panel {
+    .ons-right-panel-container {
+        position: absolute;
+        right: auto;
+        width: 100%;
+    }
+
+    .on-map-container {
+        position: absolute;
+        left: -100%;
+        width: 100%;
+    }
+}
+
+.ons-show-map {
+    .ons-right-panel-container {
+        position: absolute;
+        right: 100%;
+        width: 100%;
+    }
+
+    .on-map-container {
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.ons-show-map {
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Latitude: <span id="lat"></span></p>
+<p>Longitude: <span id="lon"></span></p>
+<p>Heading: <span id="h"></span></p>
+<p>Speed: <span id="s"></span></p>
+</body>
+<script>
+    var lat, lon, h, s, crd;
+    lat = document.getElementById('lat');
+    lon = document.getElementById('lon');
+    h = document.getElementById('h');
+    s = document.getElementById('s');
+    
+    var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+
+function success(pos) {
+  crd = pos.coords;
+
+  console.log('Your current position is:');
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
+}
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+
+
+    window.setInterval(function(){
+        navigator.geolocation.getCurrentPosition(success, error, options);     
+        lat.innerText = crd.latitude;
+        lon.innerText = crd.longitude;
+        h.innerText = crd.heading   
+    }, 1000);
+</script>
+</html>

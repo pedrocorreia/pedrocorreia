@@ -1,0 +1,41 @@
+.#{$ons-prefix}-main {
+    min-height: 100%;
+
+    &.ons-show-panel {
+    }
+
+    .#{$ons-prefix}-nav-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .#{$ons-prefix}-app-container {
+        margin-top: 60px;
+    }
+
+    .#{$ons-prefix}-map-container {
+        height: calc(100vh - 60px);
+
+        @include ons-panel-transition;
+    }
+
+    .#{$ons-prefix}-right-panel-container {
+        z-index: 1;
+        min-height: calc(100vh - 60px);
+        background: rgb(216, 216, 216);
+
+        @include ons-panel-transition;
+    }
+
+    .#{$ons-prefix}-top-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: $ons-top-bar-height;
+        background: #fff;
+
+        @include ons-box-shadow;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <link rel="stylesheet" href="css/on-styles.css">
+</head>
+<body>
+    <div id="on-main" class="ons-main">
+        <div class="row no-gutters d-none d-lg-flex d-lg-flex d-xl-flex">
+            <div class="col ons-nav-container">
+                <div class="ons-top-bar row no-gutters">
+                    <div class="col-auto ons-logo">
+                        <img srcset="img/top-bar-logo@2x.png 2x, img/top-bar-logo.png 1x" alt="one.network logo">
+                    </div>
+                    <div class="col">
+                        <ul class="nav">
+                            <li class="nav-item dropdown">
+                                <a data-toggle="dropdown" class="nav-link" href="#" role="button" aria-haspopoup="true" aria-expanded="false">Works Planning</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a data-toggle="dropdown" class="nav-link" href="#" role="button" aria-haspopoup="true" aria-expanded="false">Traffic Management</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Home</a>
+                                    <div class="dropdown-divider"></div> 
+                                    <a href="#" class="dropdown-item">Create plan</a> 
+                                    <a href="#" class="dropdown-item">Create group</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">Real-time closure dashboard</a>
+                                    <a href="#" class="dropdown-item">Real-time status report</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a data-toggle="dropdown" class="nav-link" href="#" role="button" aria-haspopoup="true" aria-expanded="false">Content Management</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a data-toggle="dropdown" class="nav-link" href="#" role="button" aria-haspopoup="true" aria-expanded="false">Route Monitor</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Dashboard</a>
+                                    <div class="dropdown-divider"></div> 
+                                    <a href="#" class="dropdown-item">Manage routes</a> 
+                                    <a href="#" class="dropdown-item">Manage alarms</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto ons-user">user name and avatar</div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters d-flex d-lg-none d-xl-none">
+            <div class="col ons-nav-container">
+                <div class="ons-top-bar mobile row no-gutters">
+                    <div class="col-auto">
+                        <i class="material-icons">menu</i>
+                    </div>
+                    <div class="col ons-logo">
+                        <img srcset="img/top-bar-logo@2x.png 2x, img/top-bar-logo.png 1x" alt="one.network logo">
+                    </div>
+                    <div class="col-auto">
+                        <i class="material-icons">menu</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="on-app" class="row no-gutters ons-app-container">
+            <div id="on-map" class="col ons-map-container">
+                <div class="fake-map">
+                    yo
+                </div>
+            </div>
+            <div id="on-right-panel" class="col col-auto ons-right-panel-container">
+                <div class="ons-right-panel">
+                    <div class="ons-panel-collapse-tab">
+                        <i class="material-icons">arrow_forward</i>
+                    </div>
+                    <div class="ons-panel-body">
+                        a
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var o = $('#on-main');
+        var hammertime = new Hammer(o[0]);
+        hammertime.on('swipeleft', function(ev) {
+            o.addClass('ons-show-panel').removeClass('ons-show-map');
+        });
+        hammertime.on('swiperight', function(ev) {
+            o.addClass('ons-show-map').removeClass('ons-show-panel');
+        });
+    </script>
+</body>
+</html>

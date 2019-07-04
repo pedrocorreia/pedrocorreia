@@ -1,0 +1,124 @@
+.ons-main {
+  min-height: 100%;
+}
+.ons-main .ons-nav-container {
+  position: relative;
+  z-index: 2;
+}
+.ons-main .ons-app-container {
+  margin-top: 60px;
+}
+.ons-main .ons-map-container {
+  height: calc(100vh - 60px);
+  transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+}
+.ons-main .ons-right-panel-container {
+  z-index: 1;
+  min-height: calc(100vh - 60px);
+  background: #d8d8d8;
+  transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+}
+.ons-main .ons-top-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ons-top-bar {
+  padding: 16px;
+}
+.ons-top-bar .ons-logo {
+  margin-right: 32px;
+}
+.ons-top-bar.mobile .ons-logo {
+  margin: 0;
+  text-align: center;
+}
+
+.ons-right-panel {
+  position: relative;
+  width: 370px;
+  transition: left 200ms ease-in-out 0ms, right 200ms ease-in-out 0ms;
+}
+.ons-right-panel .ons-panel-collapse-tab {
+  line-height: 0;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  padding: 8px;
+  transform: translateX(-100%);
+  background: #fff;
+  border-radius: 50px 0 0 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.ons-right-panel .ons-panel-body {
+  height: calc(100vh - 60px);
+  background: #fff;
+  box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ons-show-panel .ons-right-panel-container {
+  position: absolute;
+  right: auto;
+  width: 100%;
+}
+.ons-show-panel .on-map-container {
+  position: absolute;
+  left: -100%;
+  width: 100%;
+}
+
+.ons-show-map .ons-right-panel-container {
+  position: absolute;
+  right: 100%;
+  width: 100%;
+}
+.ons-show-map .on-map-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .ons-map-container {
+    position: absolute;
+    left: 100%;
+  }
+
+  .ons-right-panel-container {
+    position: absolute;
+    left: 0;
+  }
+  .ons-right-panel-container .ons-right-panel {
+    width: 100%;
+  }
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.fake-map {
+  display: inline-block;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #bebebe;
+}
+
+a {
+  color: #333;
+}
+
+/*# sourceMappingURL=on-styles.css.map */

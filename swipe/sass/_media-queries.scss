@@ -1,0 +1,15 @@
+@media (max-width: 576px) {
+    .#{$ons-prefix}-map-container {
+        position: absolute;
+        left: 100%;
+    }
+
+    .#{$ons-prefix}-right-panel-container {
+        position: absolute;
+        left: 0;
+
+        .#{$ons-right-panel} {
+            width: 100%;
+        }
+    }
+}
